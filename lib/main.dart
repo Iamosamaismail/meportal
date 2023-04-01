@@ -56,10 +56,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   bool isloading = true;
   String email = '';
   String password = '';
-  String u1 = "muzammil";
-  String p1 = "muzammil";
-  String u2 = "bilal";
-  String p2 = "bilal";
+  String u1 = "admin";
+  String p1 = "admin";
+  String u2 = "admin";
+  String p2 = "admin";
   String username = '';
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -190,6 +190,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         borderRadius: BorderRadius.circular(30),
                       ),
                       child: TextFormField(
+
                         obscureText: true,
                         onChanged: (val2) {
                           setState(() => password = val2);
